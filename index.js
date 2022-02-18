@@ -10,7 +10,7 @@ import './index.css';
             {props.value}
           </button>
         );
-      }      
+      }     
 
       function Square(props) {
         return (
