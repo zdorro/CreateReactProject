@@ -4,13 +4,21 @@ import './index.css';
 
 
 
+const CustomButton=({
+  children,
+  onСlick
+}) => {
+  return (
+    <button onClick={onСlick} className='yellow'>{children}</button>
+  )
+}
 
 class App extends React.Component {
-    render() {
-        return (
-            <button className='yellow' onClick={() =>console.log('nu epta, nu kuda???')}>Privet, SUKA</button>
-        )
-    }
+  render () {
+    return (
+      <CustomButton onСlick={()=>console.log('OLOLO')}>AZAZA</CustomButton>
+    )
+  }
 }
 
   ReactDOM.render(
