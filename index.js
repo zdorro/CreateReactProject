@@ -13,7 +13,10 @@ const element = (
   </h1>
 );
 
-const kefBtn = <button onClick={() => whenClick() }>ты лалка</button>;
+const kefBtn = <button onClick={() => whenClick() }>
+  {element}
+</button>;
+
 
   ReactDOM.render(
     kefBtn, 
